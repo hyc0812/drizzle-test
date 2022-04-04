@@ -2,30 +2,46 @@
 
 > This is a dApp created by drizzle box. It mainly contains two parts: Truffle project and React project.
 
+### Prerequisite
+- Ganache UI
+- Truffle 
+- Node.js
+
+
 ### Launch the truffle project part:
-> At project root directory
+
 ```linux
 truffle compile
-truffle migrate ----network develop
 ```
-> It should compile all the smart contract and deploy them.
+> It should compile all the smart contract.
+> run `npm install --save @openzeppelin/contracts` if confronted with Parse error
 
-> run `npm install --save @openzeppelin/contracts` if confronted with parse error
+Open ganache UI, config the `RPC SERVER:HTTP://127.0.0.1:8545` and add our project by selecting the `truffle-config.js`, then click `Restart`. 
+
+Next step run the following command:
+```linux
+truffle migrate --network develop
+```
+By running this, the smart contracts in this project were deployed to the blockchain.
+
+We can check what was happened to our blockchain in ganache UI. 
 
 ### Launch the react project part:
-> At /drizzle-test/app directory
+> At **/drizzle-test/app** directory run:
 ```linux
-npm rebuild
 npm run start
 ```
 > If confronted with problems e.g. `sh: 1: react-scripts: not found` should run `npm install` first. 
-> My Linux Ubuntu OS have npm install failure with "npm ERR! code 1". Tried to solve the problem with the following way:
+
+
+Enjoy!...
 
 
 
 
 
-
+---
+Following are the memos for myself to tackle with confronted problems
 
 ### Uninstall Nodejs
 

@@ -10,6 +10,8 @@ truffle migrate ----network develop
 ```
 > It should compile all the smart contract and deploy them.
 
+> run `npm install --save @openzeppelin/contracts` if confronted with parse error
+
 ### Launch the react project part:
 > At /drizzle-test/app directory
 ```linux

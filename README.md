@@ -40,3 +40,30 @@ which node
 you can see the location of the node. Try which nodejs and which npm too.
 
 I would recommend installing node using Node Version Manager(NVM). That saved a lot of headache for me. You can install nodejs and npm without sudo using nvm.
+
+
+
+Just replace @latest with the version number you want to downgrade to. I wanted to downgrade to version 3.10.10, so I used this command:
+
+npm install -g npm@3.10.10
+If you're not sure which version you should use, look at the version history. For example, you can see that 3.10.10 is the latest version of npm 3.
+
+### install 
+
+sudo apt update
+sudo apt install nodejs npm
+
+
+6.14.4
+
+
+ou can use n for node's version management. There is a simple intro for n.
+
+$ npm install -g n
+$ n 6.10.3
+this is very easy to use.
+
+then you can show your node version:
+
+$ node -v
+v6.10.3

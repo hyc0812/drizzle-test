@@ -8,3 +8,5 @@
 truffle compile
 truffle migrate ----network develop
 ```
+
+Xin jin help me to upload..,

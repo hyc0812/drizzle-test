@@ -25,3 +25,20 @@ then you can show your node version:
 
 $ node -v
 v6.10.3
+
+
+### Uninstall Nodejs
+
+sudo apt-get remove nodejs
+sudo apt-get remove npm
+Then go to /etc/apt/sources.list.d and remove any node list if you have. Then do a
+
+sudo apt-get update
+Check for any .npm or .node folder in your home folder and delete those.
+
+If you type
+
+which node
+you can see the location of the node. Try which nodejs and which npm too.
+
+I would recommend installing node using Node Version Manager(NVM). That saved a lot of headache for me. You can install nodejs and npm without sudo using nvm.

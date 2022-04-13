@@ -29,12 +29,14 @@ We can check what was happened to our blockchain in ganache UI.
 ### Launch the react project part:
 > At **/drizzle-test/app** directory run:
 
+> **NOTE: This step always forgot! Don't waste your time**
+
 ```linux
 npm install
 npm run start
 ```
 
-> `HOST=0.0.0.0 npm run start` can let other people access your app from their computers.
+> **`HOST=0.0.0.0 npm run start`** can let other people access your app from their computers.
 
 > Now we can enjoy interacting with our blockchain and smart contract using front-end webpage.
 

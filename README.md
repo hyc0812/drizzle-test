@@ -38,10 +38,16 @@ npm run start
 
 > Now we can enjoy interacting with our blockchain and smart contract using front-end webpage.
 
-Enjoy!...
+### Enjoy!...
 
 ---
-![  ](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v2y0a2nx2cfcaw4ytdtk.png)Following are the memos for myself to tackle with confronted problems
+<p align="center">
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v2y0a2nx2cfcaw4ytdtk.png" />
+</p>
+
+---
+
+### Following are the memos for myself to tackle with confronted problems
 
 ### Install nodejs
 ```linux

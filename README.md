@@ -35,16 +35,13 @@ npm run start
 ```
 
 > `HOST=0.0.0.0 npm run start` can let other people access your app from their computers.
-Now we can enjoy interacting with our blockchain and smart contract using front-end webpage.
+
+> Now we can enjoy interacting with our blockchain and smart contract using front-end webpage.
 
 Enjoy!...
 
-
-
-
-
 ---
-Following are the memos for myself to tackle with confronted problems
+![  ](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v2y0a2nx2cfcaw4ytdtk.png)Following are the memos for myself to tackle with confronted problems
 
 ### Install nodejs
 ```linux

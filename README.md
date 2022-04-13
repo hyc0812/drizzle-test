@@ -33,6 +33,8 @@ We can check what was happened to our blockchain in ganache UI.
 npm install
 npm run start
 ```
+
+> `HOST=0.0.0.0 npm run start` can let other people access your app from their computers.
 Now we can enjoy interacting with our blockchain and smart contract using front-end webpage.
 
 Enjoy!...

@@ -11,10 +11,10 @@
 ### Launch the truffle project part:
 
 ```linux
+npm install --save @openzeppelin/contracts
 truffle compile
 ```
 > It should compile all the smart contract.
-> run `npm install --save @openzeppelin/contracts` if confronted with **Parse Error**
 
 Open ganache UI, config the `RPC SERVER:HTTP://127.0.0.1:8545` and add our project by selecting the `truffle-config.js`, then click `Restart`. 
 
@@ -28,12 +28,11 @@ We can check what was happened to our blockchain in ganache UI.
 
 ### Launch the react project part:
 > At **/drizzle-test/app** directory run:
+
 ```linux
+npm install
 npm run start
 ```
-> If confronted with problems e.g. `sh: 1: react-scripts: not found` should run `npm install` first. 
-
-
 Now we can enjoy interacting with our blockchain and smart contract using front-end webpage.
 
 Enjoy!...

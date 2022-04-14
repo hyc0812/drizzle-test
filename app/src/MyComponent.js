@@ -10,9 +10,9 @@ export default ({ drizzle, drizzleState }) => {
     <div className="App">
       <div>
         <img src={logo} alt="drizzle-logo" />
-        <h1>Drizzle Examples</h1>
+        <h1>MADMUC Private Geth BlockChain</h1>
         <p>
-          Examples of how to get started with Drizzle in various situations.
+          Built by Yongchang He.
         </p>
       </div>
 

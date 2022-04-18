@@ -54,6 +54,7 @@ npm run start
 ### Install nodejs
 ```linux
 sudo apt update
+sudo apt upgrade
 sudo apt install nodejs npm
 ```
 
@@ -64,7 +65,8 @@ sudo apt-get remove npm
 ```
 Then go to /etc/apt/sources.list.d and remove any node list if you have. Then do a
 ```linux
-sudo apt-get update
+sudo apt update
+sudo apt upgrade
 ```
 Check for any .npm or .node folder in your home folder and delete those.
 

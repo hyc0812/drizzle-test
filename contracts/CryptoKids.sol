@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.7;
+pragma solidity ^0.5.16;
 
 contract CryptoKids {
     // owner DAD
@@ -8,7 +8,7 @@ contract CryptoKids {
 
     event LogKidFundingReceived(address addr, uint amount, uint contractBalance);
 
-    constructor() {
+    constructor() public {
         owner = msg.sender;
     }
     // define Kid

@@ -27,6 +27,33 @@ export default ({ drizzle, drizzleState }) => {
         />
       </div>
 
+
+
+
+
+
+<div className="section">
+        <h2>CryptoKids</h2>
+        <p>
+          A smart contract to send funding to different kids...
+        </p>
+        <p>
+          <strong>Stored Value: </strong>
+          <ContractForm
+            drizzle={drizzle}
+            drizzleState={drizzleState}
+            contract="CryptoKids"
+            method="addKid"
+          />
+        </p>
+        {/* <ContractForm drizzle={drizzle} contract="CryptoKids" method="addKid" /> */}
+</div>
+
+
+
+
+
+
       <div className="section">
         <h2>SimpleStorage</h2>
         <p>

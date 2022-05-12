@@ -4,7 +4,7 @@ pragma solidity ^0.5.16;
 
 contract CryptoKids {
     // owner DAD
-    address owner;
+    address payable owner;
 
     event LogKidFundingReceived(address addr, uint amount, uint contractBalance);
 
@@ -45,13 +45,15 @@ contract CryptoKids {
     }
 
     // deposit funds to contract, especially to a kid's account
-    function deposit(address walletAddress) payable public {
-        addToKidsBalance(walletAddress);
-    }
-    function addToKidsBalance(address walletAddress) private {
+    // function deposit(address walletAddress) payable public {
+    //     addToKidsBalance(walletAddress);
+    // }
+    function addToKidsBalance(address walletAddress, uint value) payable public {
+        
         for(uint i = 0; i < kids.length; i++) {
             if(kids[i].walletAddress == walletAddress) {
-                kids[i].amount += msg.value;
+                kids[i].amount += value;
+                owner.transfer(value);
                 emit LogKidFundingReceived(walletAddress, msg.value, balanceOf());
             }
         }

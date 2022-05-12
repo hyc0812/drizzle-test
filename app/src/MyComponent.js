@@ -32,22 +32,7 @@ export default ({ drizzle, drizzleState }) => {
 
 
 
-<div className="section">
-        <h2>CryptoKids</h2>
-        <p>
-          A smart contract to send funding to different kids...
-        </p>
-        <p>
-          <strong>Stored Value: </strong>
-          <ContractForm
-            drizzle={drizzle}
-            drizzleState={drizzleState}
-            contract="CryptoKids"
-            method="addKid"
-          />
-        </p>
-        {/* <ContractForm drizzle={drizzle} contract="CryptoKids" method="addKid" /> */}
-</div>
+
 
 
 
@@ -71,6 +56,10 @@ export default ({ drizzle, drizzleState }) => {
         </p>
         <ContractForm drizzle={drizzle} contract="SimpleStorage" method="set" />
       </div>
+
+
+
+
 
       <div className="section">
         <h2>TutorialToken</h2>
@@ -116,41 +105,59 @@ export default ({ drizzle, drizzleState }) => {
         />
       </div>
 
-      <div className="section">
-        <h2>ComplexStorage</h2>
-        <p>
-          Finally this contract shows data types with additional considerations.
-          Note in the code the strings below are converted from bytes to UTF-8
-          strings and the device data struct is iterated as a list.
-        </p>
-        <p>
-          <strong>String 1: </strong>
-          <ContractData
-            drizzle={drizzle}
-            drizzleState={drizzleState}
-            contract="ComplexStorage"
-            method="string1"
-            toUtf8
-          />
-        </p>
-        <p>
-          <strong>String 2: </strong>
-          <ContractData
-            drizzle={drizzle}
-            drizzleState={drizzleState}
-            contract="ComplexStorage"
-            method="string2"
-            toUtf8
-          />
-        </p>
-        <strong>Single Device Data: </strong>
-        <ContractData
-          drizzle={drizzle}
-          drizzleState={drizzleState}
-          contract="ComplexStorage"
-          method="singleDD"
-        />
-      </div>
+
+          <div className="section">
+                <h2>CryptoKids</h2>
+
+                <p>
+                  A smart contract to send funding to different kids...
+                </p>
+
+                <strong>Add kids: </strong>
+                <ContractForm drizzle={drizzle} contract="CryptoKids" method="addKid" />
+
+
+                <p>
+                  <strong>Kids informaiton: </strong>
+                  {/* <ContractData
+                    drizzle={drizzle}
+                    drizzleState={drizzleState}
+                    contract="CryptoKids"
+                    method="kids"
+                   /> */}
+                </p>
+
+                <p>
+                <strong>Current Contract balance: </strong>
+                    <ContractData
+                    drizzle={drizzle}
+                    drizzleState={drizzleState}
+                    contract="CryptoKids"
+                    method="balanceOf"
+                    />
+                </p>
+
+                <strong>Add deposit to Contract: </strong>
+                <ContractForm drizzle={drizzle} contract="CryptoKids" method="addToKidsBalance" />
+                
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
     </div>
   );
 };

@@ -15,6 +15,7 @@ npm install --save @openzeppelin/contracts
 truffle compile
 ```
 > It should compile all the smart contract.
+> Use `sudo truffle compile` to download and update the solc version.
 
 Open ganache UI, config the `RPC SERVER:HTTP://127.0.0.1:8545` and add our project by selecting the `truffle-config.js`, then click `Restart`. 
 

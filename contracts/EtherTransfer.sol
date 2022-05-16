@@ -5,7 +5,7 @@ contract Payable {
     address payable public owner;
 
     constructor() payable {
-        owner = (msg.sender);
+        owner = payable(msg.sender);
     }
     // Function to deposit Ether into this contract.
     // Call this function along with some Ether.

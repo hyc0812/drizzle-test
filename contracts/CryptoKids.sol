@@ -9,7 +9,7 @@ contract CryptoKids {
     event LogKidFundingReceived(address addr, uint amount, uint contractBalance);
 
     constructor() public {
-        owner = msg.sender;
+        owner = payable(msg.sender);
     }
     // define Kid
     struct Kid {
